@@ -8,7 +8,7 @@ int main(void)
     zList = zombieHorde(size, "Living Dead");
     for (int i = 0; i < size; i++)
     {
-        std::cout << "zombie " << i << ": ";
+        std::cout << "zombie " << i << "name: ";
         zList[i].announce();
     }
     delete[] zList;

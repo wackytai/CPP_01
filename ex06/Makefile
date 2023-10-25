@@ -1,4 +1,4 @@
-NAME = hfilter
+NAME = harlFilter
 SOURCES = $(wildcard *.cpp)
 CC = @c++
 CFLAGS = -Wall -Wextra -Werror -g -std=c++98 -pedantic

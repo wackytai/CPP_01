@@ -6,12 +6,23 @@ Replacer::~Replacer() {}
 
 int	Replacer::checkFile( std::string infile, std::string outfile )
 {
-	std::ifstream	myfile (infile);
+	std::ifstream	myfile(infile.c_str(), std::ios::in);
 	char			buffer;
 	
-	if (myfile.is_open())
-		while ( myfile )
-			buffer = myfile.get();
+	(void)outfile;
+	if (!myfile.is_open())
+		return print_error("Could not open file");
+	while ( myfile )
+	{
+		buffer = myfile.get();
+		std::cout << buffer;
+	}
 	/* for debug purposes */
-	std::cout << buffer << std::endl;
+	return 0;
+}
+
+int	Replacer::print_error( std::string str )
+{
+	std::cout << str << std::endl;
+	return 1;
 }

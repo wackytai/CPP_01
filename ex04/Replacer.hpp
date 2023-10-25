@@ -3,6 +3,7 @@
 # include <iostream>
 # include <fstream>
 # include <string>
+# include <cstring>
 
 class Replacer
 {
@@ -11,6 +12,7 @@ class Replacer
 		Replacer();
 		~Replacer();
 		int	checkFile( std::string infile, std::string outfile );
+		int	print_error( std::string str );
 };
 
 #endif

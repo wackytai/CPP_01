@@ -1,8 +1,13 @@
-#include "Zombie.hpp"
+#include "../inc/Zombie.hpp"
+
+Zombie::Zombie( ) : _name("Default")
+{
+    std::cout << this->_name << ": Custom Constructor called" << std::endl;
+}
 
 Zombie::Zombie( std::string name )
 {
-    std::cout << this->_name << ": Constructor called" << std::endl;
+    std::cout << this->_name << ": Custom Constructor called" << std::endl;
 }
 
 Zombie::~Zombie()

@@ -1,11 +1,11 @@
-#include "Zombie.hpp"
+#include "../inc/Zombie.hpp"
 
 int main( void )
 {
-    Zombie  myZombie;
+    Zombie*  myZombie;
 
     myZombie = newZombie("Bogeyman");
-    myZombie.announce();
+    myZombie->announce();
     randomChump("Chump");
     delete (myZombie);
 }

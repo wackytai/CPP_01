@@ -30,7 +30,7 @@ void	Harl::complain( std::string level )
 	std::string	levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int	i = 0;
 
-	for ( ; i < 4; i++)
+	for (; i < 4; i++)
 		if (level == levels[i])
 			break ;
 	switch (i)
@@ -45,7 +45,7 @@ void	Harl::complain( std::string level )
 			error();
 			break;
 		default:
-			std::cout << " [ Probably complaining about insignificant problemas ]" << std::endl;
+			std::cout << " [ Probably complaining about insignificant problems ]" << std::endl;
 			break;
 	}
 }

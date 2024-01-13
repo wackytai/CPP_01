@@ -1,7 +1,7 @@
 NAME = harlFilter
 SOURCES = $(wildcard *.cpp)
 CC = @c++
-CFLAGS = -Wall -Wextra -Werror -g -std=c++98 -pedantic
+CFLAGS = -Wall -Wextra -Werror -Wno-implicit-fallthrough -g -std=c++98 -pedantic
 
 all:	$(NAME)
 $(NAME):	$(SOURCES)

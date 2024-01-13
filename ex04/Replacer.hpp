@@ -3,15 +3,13 @@
 # include <iostream>
 # include <fstream>
 # include <string>
-# include <cstring>
 
 class Replacer
 {
-	private:
 	public:
 		Replacer();
 		~Replacer();
-		int	checkFile( std::string infile, std::string outfile );
+		int	replace( std::string infile, std::string s1, std::string s2 );
 		int	print_error( std::string str );
 };
 

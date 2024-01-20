@@ -15,7 +15,7 @@ int	Replacer::replace( std::string infile, std::string s1, std::string s2 )
 	
 	in.open(infile.c_str(), std::ios::in);
 	if (!in.is_open())
-		return print_error("Could not open infile");
+		return print_error("Could not open: " + infile);
 	out.open((infile + ".replace").c_str(), std::ios::out | std::ios::trunc);
 	if (!out.is_open())
 		return print_error("Could not open outfile");

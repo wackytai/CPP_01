@@ -24,4 +24,5 @@ int	main(int ac, char **av)
 	Karen.complain("123");
 	Karen.complain("");
 	Karen.complain(std::string());
-} */
+}
+ */
